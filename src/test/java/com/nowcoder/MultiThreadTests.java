@@ -26,7 +26,7 @@ class MyThread extends Thread {
     }
 }
 
-class  Consumer implements Runnable {
+class Consumer implements Runnable {
     private BlockingQueue<String> q;
     public Consumer(BlockingQueue<String> q) {
         this.q = q;
