@@ -58,7 +58,7 @@ public class SearchService {
         SolrInputDocument doc =  new SolrInputDocument();
         doc.setField("id", qid);
         doc.setField(QUESTION_TITLE_FIELD, title);
-        doc.setField("QUESTION_CONTENT_FIELD", content);
+        doc.setField(QUESTION_CONTENT_FIELD, content);
         UpdateResponse response = client.add(doc, 1000);
         return response != null && response.getStatus() == 0;
     }

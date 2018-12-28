@@ -21,7 +21,7 @@ import java.util.Random;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringApplicationConfiguration(classes = WendaApplication.class)
-@Sql("/init-schema.sql")
+//@Sql("/init-schema.sql")
 public class InitDatabaseTests {
     @Autowired
     UserDAO userDAO;
@@ -73,10 +73,11 @@ public class InitDatabaseTests {
         //Assert.assertNull(userDAO.selectById(1));
     }
 
+    /*
     @Test
     public void testSensitive() {
         String content = "question content <img src=\"https:\\/\\/baidu.com/ff.png\">色情赌博";
         String result = sensitiveUtil.filter(content);
         System.out.println(result);
-    }
+    }*/
 }
